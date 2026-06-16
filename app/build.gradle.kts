@@ -25,13 +25,19 @@ android {
                 "proguard-rules.pro"
             )
         }
+    }
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_17
         targetCompatibility = JavaVersion.VERSION_17
+    }
     kotlinOptions {
         jvmTarget = "17"
+    }
     buildFeatures {
         compose = true
+    }
+}
+
 dependencies {
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.activity.compose)
@@ -63,3 +69,4 @@ dependencies {
     implementation(libs.kotlinx.coroutines.android)
     implementation(libs.accompanist.permissions)
     implementation(libs.androidx.exifinterface)
+}
